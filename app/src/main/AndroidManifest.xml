@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="imp.translator.diana.lang" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="ASAPTranslate"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="ASAPTranslate" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Speak"
+            android:label="@string/title_activity_speak" >
+        </activity>
+        <activity
+            android:name=".Translate"
+            android:label="@string/title_activity_translate" >
+        </activity>
+        <activity
+            android:name=".Translator"
+            android:label="@string/title_activity_translator" >
+        </activity>
+        <activity
+            android:name=".VoiceToTranslate"
+            android:label="@string/title_activity_voice_to_translate" >
+        </activity>
+        <activity
+            android:name=".VoiceToText"
+            android:label="@string/title_activity_voice_to_text" >
+        </activity>
+        <activity
+            android:name=".Record"
+            android:label="@string/title_activity_record" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="@string/title_activity_info" >
+        </activity>
+    </application>
+
+</manifest>

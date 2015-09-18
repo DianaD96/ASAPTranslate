@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back2">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="FROM"
+        android:id="@+id/buttonfrom"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="TO"
+        android:id="@+id/buttonto"
+        android:layout_alignTop="@+id/buttonfrom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trans"
+        android:layout_alignTop="@+id/buttonfrom"
+        android:layout_alignParentTop="@+id/buttonto"
+        android:layout_centerHorizontal="true"></com.melnykov.fab.FloatingActionButton>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="Write your text here..."
+        android:background="#FFFFFF"
+        android:id="@+id/toTranslate"
+        android:layout_below="@+id/buttonfrom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The translated text is..."
+        android:background="#FFFFFF"
+        android:id="@+id/translated"
+        android:layout_below="@+id/toTranslate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:id="@+id/proceed"
+        android:layout_below="@+id/translated"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewfrom"
+        android:layout_alignBottom="@+id/toTranslate"
+        android:layout_alignRight="@+id/buttonto"
+        android:layout_alignEnd="@+id/buttonto" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewto"
+        android:layout_alignBottom="@+id/translated"
+        android:layout_alignRight="@+id/buttonto"
+        android:layout_alignEnd="@+id/buttonto" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/speak"
+        android:id="@+id/buttonSpeak"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/proceed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp" />
+
+
+</RelativeLayout>
